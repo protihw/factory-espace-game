@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuMain : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
     public GameObject mainPanel;
     public GameObject startButton, exitButton;
