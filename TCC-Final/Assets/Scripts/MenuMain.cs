@@ -20,6 +20,10 @@ public class MenuMain : MonoBehaviour
 
     public void ExitButton()
     {
-        mainPanel.SetActive(true);
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                    Application.Quit();
+        #endif
     }
 }
