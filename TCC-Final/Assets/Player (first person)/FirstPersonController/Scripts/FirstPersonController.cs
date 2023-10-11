@@ -198,7 +198,7 @@ namespace StarterAssets
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
-				_animator.SetTrigger("isWalking");
+				//_animator.SetTrigger("isWalking");
 			}
 
 			// move the player
