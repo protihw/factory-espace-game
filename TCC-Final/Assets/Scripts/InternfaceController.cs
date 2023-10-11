@@ -24,7 +24,7 @@ public class InternfaceController : MonoBehaviour
 
         if (invActive)
         {
-            Cursor.lockState = CursorLockMode.None;
+            //Cursor.lockState = CursorLockMode.None;
         }
     }
 }
