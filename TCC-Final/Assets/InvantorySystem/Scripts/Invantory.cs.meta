@@ -1,7 +1,11 @@
 fileFormatVersion: 2
-guid: ab76567c3e76ee0448e15fb2f51b756d
+guid: bc283a5ee0ed24548b5d5a4772958d2c
+labels:
+- Code
+- SimpleInventoryBar
+timeCreated: 1473688439
+licenseType: Store
 MonoImporter:
-  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0

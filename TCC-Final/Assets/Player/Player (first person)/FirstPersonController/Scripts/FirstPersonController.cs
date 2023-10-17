@@ -103,7 +103,7 @@ namespace StarterAssets
 		private void Start()
 		{
 			_controller = GetComponent<CharacterController>();
-			_animator = GetComponent<Animator>();
+			
 			_input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM
 			_playerInput = GetComponent<PlayerInput>();
@@ -166,13 +166,25 @@ namespace StarterAssets
 
 			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is no input, set the target speed to 0
-			if (_input.move == Vector2.zero) targetSpeed = 0.0f;
-
+			if (_input.move == Vector2.zero)
+			{
+				targetSpeed = 0.0f;
+                _animator.SetInteger("PlayerWalking", 0);
+            }
 			// a reference to the players current horizontal velocity
 			float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
 
 			float speedOffset = 0.1f;
 			float inputMagnitude = _input.analogMovement ? _input.move.magnitude : 1f;
+
+			if (targetSpeed == 6) 
+			{
+				_animator.SetInteger("PlayerRunning", 1);
+			}
+			else
+			{
+				_animator.SetInteger("PlayerRunning", 0);
+            }
 
 			// accelerate or decelerate to target speed
 			if (currentHorizontalSpeed < targetSpeed - speedOffset || currentHorizontalSpeed > targetSpeed + speedOffset)
@@ -198,8 +210,8 @@ namespace StarterAssets
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
-				//_animator.SetTrigger("isWalking");
-			}
+                _animator.SetInteger("PlayerWalking", 1);
+            }
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
@@ -211,9 +223,10 @@ namespace StarterAssets
 			{
 				// reset the fall timeout timer
 				_fallTimeoutDelta = FallTimeout;
+                _animator.SetInteger("PlayerJumping", 0);
 
-				// stop our velocity dropping infinitely when grounded
-				if (_verticalVelocity < 0.0f)
+                // stop our velocity dropping infinitely when grounded
+                if (_verticalVelocity < 0.0f)
 				{
 					_verticalVelocity = -2f;
 				}
@@ -223,6 +236,7 @@ namespace StarterAssets
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+					_animator.SetInteger("PlayerJumping", 1);
 				}
 
 				// jump timeout
