@@ -22,6 +22,7 @@ public class CollectableObject : MonoBehaviour
     public int quantity = 0;
     public InvantoryObject objectRefrence;
     private bool justSpawned = false;
+    public GameObject inputCanvas;
 
     void Start()
     {
