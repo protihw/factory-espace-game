@@ -15,6 +15,7 @@ public class DoorActions : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(doorOpen);
         if (Input.GetKeyDown(KeyCode.E) && colliding && doorOpen == false)
         {
             doorOpen = true;
