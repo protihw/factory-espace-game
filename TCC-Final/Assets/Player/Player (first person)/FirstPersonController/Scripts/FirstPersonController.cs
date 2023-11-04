@@ -124,34 +124,34 @@ namespace StarterAssets
             GroundedCheck();
             Move();
             RaycastCamera();
-            if (atualHit != null && hitting == false)
-            {
-                atualHit.GetComponent<CollectableObject>().inputCanvas.SetActive(false);
-                atualHit = null;
-            }
+            //if (atualHit != null && hitting == false)
+            //{
+                //atualHit.GetComponent<CollectableObject>().inputCanvas.SetActive(false);
+                //atualHit = null;
+            //}
         }
 
         void RaycastCamera()
         {
-            Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
-            RaycastHit hit;
-            float distance = 1;
-            if (Physics.Raycast(ray, out hit, distance))
-            {
-                if (hit.transform.tag == "Object")
-                {
-                    atualHit = hit.transform.gameObject;
-                    hit.transform.gameObject.GetComponent<CollectableObject>().inputCanvas.SetActive(true);
-                    hitting = true;
-                }
+            //Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+            //RaycastHit hit;
+            //float distance = 1;
+            //if (Physics.Raycast(ray, out hit, distance))
+            //{
+                //if (hit.transform.tag == "Object")
+                //{
+                    //atualHit = hit.transform.gameObject;
+                    //hit.transform.gameObject.GetComponent<CollectableObject>().inputCanvas.SetActive(true);
+                    //hitting = true;
+                //}
 
-            }
-            else
-            {
+            //}
+            //else
+            //{
 
-                hitting = false;
+                //hitting = false;
 
-            }
+            //}
         }
         private void LateUpdate()
         {

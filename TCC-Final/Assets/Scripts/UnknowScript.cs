@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vicenzo : MonoBehaviour
+public class UnknowScript : MonoBehaviour
 {
     public Shader crtShader;
     public Texture image;
