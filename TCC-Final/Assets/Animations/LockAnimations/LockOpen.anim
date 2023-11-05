@@ -428,11 +428,4 @@ AnimationClip:
     script: {fileID: 0}
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.6666667
-    functionName: OpenChest()
-    data: 
-    objectReferenceParameter: {fileID: 11500000, guid: e04c6f31964caf84dadf0227e59f1034, type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
