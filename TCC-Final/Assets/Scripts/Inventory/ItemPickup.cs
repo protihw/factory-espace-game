@@ -6,12 +6,10 @@ public class ItemPickup : MonoBehaviour
     public MessageDisplay messageDisplay;
     public GameObject itemPrefab; // Prefab do item que pode ser coletado
     public InventorySystem inventory; // Referência ao script do inventário
-    [SerializeField]
-    private bool colliding = false;
 
-    private void Update()
+    private void AddItem()
     {
-        if (colliding && Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (inventory && inventory.currentItem == null)
             {
@@ -26,21 +24,6 @@ public class ItemPickup : MonoBehaviour
             {
                 messageDisplay.ShowMessage("Você pode transportar apenas um item por vez.");
             }
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            colliding = true;           
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            colliding = false;
         }
     }
 }
