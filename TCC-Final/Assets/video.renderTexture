@@ -6,7 +6,11 @@ RenderTexture:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:TCC-Final/Assets/Render Texture/Camera Security 4.renderTexture
+  m_Name: Camera Security 4
+========
   m_Name: video
+>>>>>>>> parent of e073f5b (cameras e introdução game):TCC-Final/Assets/video.renderTexture
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
