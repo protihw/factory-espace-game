@@ -136,9 +136,13 @@ namespace StarterAssets
         {
             Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
             RaycastHit hit;
-            float distance = 1;
-            if (Physics.Raycast(ray, out hit, distance))
+            float distance = 1.5f;
+
+            int layerMask = 1 << LayerMask.NameToLayer("Ignore Raycast");
+
+            if (Physics.Raycast(ray, out hit, distance, ~layerMask))
             {
+                Debug.Log(hit.transform.gameObject);
                 if (hit.transform.tag == "Object")
                 {
                     atualHit = hit.transform.gameObject;
