@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 5134076816178631697}
   - component: {fileID: 6979190603006714075}
   - component: {fileID: 5925687318964626521}
-  - component: {fileID: 5925687318964626522}
+  - component: {fileID: 2690410599078675645}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -350,7 +350,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.99283075, y: 1.198423, z: 0.9763345}
   m_Center: {x: 0.25965142, y: -0.299047, z: -0.490858}
---- !u!114 &5925687318964626522
+--- !u!114 &2690410599078675645
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -359,10 +359,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8924987191685939470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33ae29c62a505644ea9bfee194d6c666, type: 3}
+  m_Script: {fileID: 11500000, guid: ee69577ed4189bc4bbebe807d1516c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messageDisplay: {fileID: 0}
-  itemPrefab: {fileID: 8924987191685939470}
-  inventory: {fileID: 0}
-  colliding: 0
+  itemName: Key
+  inputCanvas: {fileID: 0}

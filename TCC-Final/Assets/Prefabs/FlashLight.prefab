@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 941648576187566810}
-  - component: {fileID: 2331070150551226820}
   - component: {fileID: 8792680179616547095}
+  - component: {fileID: 6006391937554436254}
   m_Layer: 0
   m_Name: FlashLight
   m_TagString: Untagged
@@ -38,22 +38,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &2331070150551226820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457881483619192928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33ae29c62a505644ea9bfee194d6c666, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messageDisplay: {fileID: 0}
-  itemPrefab: {fileID: 457881483619192928}
-  inventory: {fileID: 0}
-  colliding: 0
 --- !u!65 &8792680179616547095
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62,11 +46,25 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 457881483619192928}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.15, y: 14, z: 7.65}
+  m_Center: {x: 0.05, y: -1, z: 0.05}
+--- !u!114 &6006391937554436254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457881483619192928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee69577ed4189bc4bbebe807d1516c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: FlashLight
+  inputCanvas: {fileID: 0}
 --- !u!1 &1078839859169532066
 GameObject:
   m_ObjectHideFlags: 0

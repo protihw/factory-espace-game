@@ -124,6 +124,7 @@ namespace StarterAssets
             GroundedCheck();
             Move();
             RaycastCamera();
+
             if (atualHit != null && hitting == false)
             {
                 atualHit.GetComponent<CollectableObject>().inputCanvas.SetActive(false);
@@ -141,8 +142,13 @@ namespace StarterAssets
                 if (hit.transform.tag == "Object")
                 {
                     atualHit = hit.transform.gameObject;
-                    hit.transform.gameObject.GetComponent<CollectableObject>().inputCanvas.SetActive(true);
+                    atualHit.GetComponent<CollectableObject>().inputCanvas.SetActive(true);
                     hitting = true;
+
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        CollectItem();
+                    }
                 }
             }
             else
@@ -151,6 +157,24 @@ namespace StarterAssets
 
             }
         }
+
+        void CollectItem()
+        {
+            if (atualHit != null)
+            {
+                CollectableObject collectable = atualHit.GetComponent<CollectableObject>();
+
+                if (collectable != null)
+                {
+                    // Adicione o item ao inventário do jogador
+                    PlayerInventory.Instance.AddItem(collectable.GetItem());
+
+                    // Desative o objeto coletável no mundo
+                    atualHit.SetActive(false);
+                }
+            }
+        }
+
         private void LateUpdate()
         {
             CameraRotation();

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.029087335, g: 0.0298977, b: 0.029896773, a: 1}
+  m_IndirectSpecularColor: {r: 0.029087335, g: 0.0298977, b: 0.029896766, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10043,10 +10043,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417039689}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1422845534 stripped
@@ -11020,6 +11020,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f4947b80397052a418e68e2ffca331dc, type: 3}
       propertyPath: m_Name
       value: Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4947b80397052a418e68e2ffca331dc, type: 3}
+      propertyPath: m_TagString
+      value: Object
       objectReference: {fileID: 0}
     - target: {fileID: 7825066305044136794, guid: f4947b80397052a418e68e2ffca331dc, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -12229,29 +12233,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d81d5dcbad18414dbedaab28891d13c, type: 3}
---- !u!1 &1718761850 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8924987191685939470, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
-  m_PrefabInstance: {fileID: 5925687319878770399}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1718761855 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8111049161247972276, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
   m_PrefabInstance: {fileID: 5925687319878770399}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1718761856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1718761850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee69577ed4189bc4bbebe807d1516c88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputCanvas: {fileID: 2008744325}
 --- !u!4 &1736689711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f7526adfec194cf4a8dc3bb561060031, type: 3}
@@ -18535,6 +18521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlashLight
       objectReference: {fileID: 0}
+    - target: {fileID: 457881483619192928, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
+      propertyPath: m_TagString
+      value: Object
+      objectReference: {fileID: 0}
     - target: {fileID: 941648576187566810, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -18579,46 +18569,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 2331070150551226820, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
-      propertyPath: inventory
-      value: 
-      objectReference: {fileID: 8997996946984200029}
-    - target: {fileID: 2331070150551226820, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
-      propertyPath: messageDisplay
-      value: 
-      objectReference: {fileID: 1062596672}
     - target: {fileID: 3706905141873468599, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8792680179616547095, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
-      propertyPath: m_Size.x
-      value: 3.1534386
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792680179616547095, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
-      propertyPath: m_Size.y
-      value: 8.977042
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792680179616547095, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
-      propertyPath: m_Size.z
-      value: 3.8407516
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792680179616547095, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
-      propertyPath: m_Center.x
-      value: 0.050617304
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792680179616547095, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
-      propertyPath: m_Center.y
-      value: -0.7379764
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792680179616547095, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
-      propertyPath: m_Center.z
-      value: 0.11060715
-      objectReference: {fileID: 0}
-    - target: {fileID: 8792680179616547095, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 6006391937554436254, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
+      propertyPath: inputCanvas
+      value: 
+      objectReference: {fileID: 2008744325}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
 --- !u!1 &3749895513922611733
@@ -20776,14 +20734,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5925687318964626522, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
-      propertyPath: inventory
+    - target: {fileID: 2690410599078675645, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
+      propertyPath: inputCanvas
       value: 
-      objectReference: {fileID: 8997996946984200029}
-    - target: {fileID: 5925687318964626522, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
-      propertyPath: messageDisplay
-      value: 
-      objectReference: {fileID: 1062596672}
+      objectReference: {fileID: 2008744325}
+    - target: {fileID: 5925687318964626521, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925687318964626521, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.31230065
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925687318964626521, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
+      propertyPath: m_Size.z
+      value: 0.15099744
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925687318964626521, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
+      propertyPath: m_Center.x
+      value: -0.015000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925687318964626521, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
+      propertyPath: m_Center.y
+      value: -0.004471794
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925687318964626521, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
+      propertyPath: m_Center.z
+      value: 0.008906491
+      objectReference: {fileID: 0}
     - target: {fileID: 8111049161247972276, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -23579,7 +23557,6 @@ GameObject:
   - component: {fileID: 5420857361259323802}
   - component: {fileID: 8616685848848154090}
   - component: {fileID: 8997996946984200029}
-  - component: {fileID: 8997996946984200030}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -24043,21 +24020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0409298f8c7a7740bea0a1485e47232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentItem: {fileID: 0}
---- !u!114 &8997996946984200030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8616685848848154086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c8f816fc289f074f97c13ae1b528768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messageDisplay: {fileID: 1062596672}
-  inventory: {fileID: 8997996946984200029}
+  inventory: []
 --- !u!4 &9006568740145171125
 Transform:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using Mono.Cecil.Cil;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ChestActions : MonoBehaviour
@@ -11,14 +12,14 @@ public class ChestActions : MonoBehaviour
     private Animator animatorChest;
     [SerializeField]
     private bool colliding;
-    private GameObject playerItem;
+    private List<Item> playerInventory;
     private bool key;
     private bool locked = true;
     private bool chestOpen = false;
 
     void Start()
     {
-        
+
     }
 
     void Update()
@@ -47,10 +48,11 @@ public class ChestActions : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            playerItem = collision.gameObject.GetComponent<InventorySystem>().currentItem;
-            if (playerItem)
+            playerInventory = collision.gameObject.GetComponent<PlayerInventory>().inventory;
+
+            if (playerInventory != null)
             {
-                if (playerItem.name == "Key(Clone)")
+                if (playerInventory.Exists(item => item.itemName == "Key"))
                 {
                     key = true;
                 }
@@ -59,6 +61,7 @@ public class ChestActions : MonoBehaviour
                     key = false;
                 }
             }
+
             colliding = true;
         }
     }
