@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     private static PlayerInventory instance;
+    private GameObject myPrefab;
     public static PlayerInventory Instance
     {
         get
@@ -23,29 +24,36 @@ public class PlayerInventory : MonoBehaviour
 
     public List<Item> inventory = new List<Item>();
 
-    public void AddItem(Item item)
+    public void Update()
     {
-        if (inventory.Contains(item))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            Debug.Log(">>> Você possui esse item em seu inventário: " + item.itemName);
-        }
-        else
-        {
-            inventory.Add(item);
-            Debug.Log("Item adicionado ao inventário: " + item.itemName);
+            RemoveItem();
         }
     }
 
-    public void RemoveItem(Item item)
+    public void AddItem(Item item, GameObject prefab)
     {
-        if (inventory.Contains(item))
+        inventory.Add(item);
+        myPrefab = prefab;
+        Debug.Log("Item adicionado ao inventário: " + item.itemName);
+    }
+
+    public void RemoveItem()
+    {
+        if (inventory.Count == 1 && myPrefab != null)
         {
-            inventory.Remove(item);
-            Debug.Log("Item removido do inventário: " + item.itemName);
+            GameObject reactivatedObject = Instantiate(myPrefab, transform.position, Quaternion.identity);
+            reactivatedObject.SetActive(true);
+
+            inventory.Clear();
+            myPrefab = null;
+
+            Debug.Log("Item removido do inventário");
         }
         else
         {
-            Debug.LogWarning("Você não possui esse item em seu inventário:: " + item.itemName);
+            Debug.LogWarning("Você não possui nenhum item em seu inventário.");
         }
     }
 }

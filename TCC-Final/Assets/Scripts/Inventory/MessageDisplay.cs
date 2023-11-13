@@ -3,10 +3,17 @@ using UnityEngine.UI;
 
 public class MessageDisplay : MonoBehaviour
 {
+    public static MessageDisplay instance;
+
     public Text messageText; // Referência ao componente Text no painel de mensagem
     public float displayDuration = 5f; // Duração de exibição da mensagem em segundos
 
     private bool isMessageVisible = false;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Update()
     {

@@ -23,7 +23,6 @@ namespace StarterAssets
         public float RotationSpeed = 1.0f;
         [Tooltip("Acceleration and deceleration")]
         public float SpeedChangeRate = 10.0f;
-
         [Space(10)]
         [Tooltip("The height the player can jump")]
         public float JumpHeight = 1.2f;
@@ -136,7 +135,7 @@ namespace StarterAssets
         {
             Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
             RaycastHit hit;
-            float distance = 1.5f;
+            float distance = 1.75f;
 
             int layerMask = 1 << LayerMask.NameToLayer("Ignore Raycast");
 
@@ -172,7 +171,7 @@ namespace StarterAssets
                     if (PlayerInventory.Instance.inventory.Count == 0)
                     {
                         // Adicione o item ao inventário do jogador
-                        PlayerInventory.Instance.AddItem(collectable.GetItem());
+                        PlayerInventory.Instance.AddItem(collectable.GetItem(), atualHit.transform.gameObject);
 
                         // Desative o objeto coletável no mundo
                         atualHit.SetActive(false);
