@@ -142,7 +142,6 @@ namespace StarterAssets
 
             if (Physics.Raycast(ray, out hit, distance, ~layerMask))
             {
-                Debug.Log(hit.transform.gameObject);
                 if (hit.transform.tag == "Object")
                 {
                     atualHit = hit.transform.gameObject;
@@ -170,11 +169,18 @@ namespace StarterAssets
 
                 if (collectable != null)
                 {
-                    // Adicione o item ao inventário do jogador
-                    PlayerInventory.Instance.AddItem(collectable.GetItem());
+                    if (PlayerInventory.Instance.inventory.Count == 0)
+                    {
+                        // Adicione o item ao inventário do jogador
+                        PlayerInventory.Instance.AddItem(collectable.GetItem());
 
-                    // Desative o objeto coletável no mundo
-                    atualHit.SetActive(false);
+                        // Desative o objeto coletável no mundo
+                        atualHit.SetActive(false);
+                    }
+                    else
+                    {
+                        Debug.Log(">>> Você possui um item em seu inventário. Descarte-o antes de realizar esta ação.");
+                    }
                 }
             }
         }
