@@ -1,11 +1,15 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInventory : MonoBehaviour
 {
     private static PlayerInventory instance;
     private GameObject myPrefab;
     public Transform dropPosition;
+    public Image slotIcon;
+
     public static PlayerInventory Instance
     {
         get
@@ -38,6 +42,8 @@ public class PlayerInventory : MonoBehaviour
         inventory.Add(item);
         myPrefab = prefab;
         Debug.Log("Item adicionado ao inventário: " + item.itemName);
+        slotIcon.sprite = item.itemIcon;
+        slotIcon.gameObject.SetActive(true);
     }
 
     public void RemoveItem()
@@ -51,6 +57,8 @@ public class PlayerInventory : MonoBehaviour
             myPrefab = null;
 
             Debug.Log("Item removido do inventário");
+            slotIcon.sprite = null;
+            slotIcon.gameObject.SetActive(false);
         }
         else
         {

@@ -2163,7 +2163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &365049829
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2172,7 +2172,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365049828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2197,7 +2197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8907,17 +8907,17 @@ RectTransform:
   m_GameObject: {fileID: 1245956970}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 365049829}
   m_Father: {fileID: 1593103977}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.004385965, y: 0.0074399384}
-  m_AnchorMax: {x: 0.048245613, y: 0.08400001}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: 50, y: 51}
+  m_AnchorMin: {x: 0.0043859654, y: 0.0073570134}
+  m_AnchorMax: {x: 0.059000004, y: 0.1078215}
+  m_AnchoredPosition: {x: -0.099975586, y: 0.2999878}
+  m_SizeDelta: {x: 40, y: 38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1245956972
 MonoBehaviour:
@@ -10186,7 +10186,6 @@ GameObject:
   - component: {fileID: 1417039692}
   - component: {fileID: 1417039691}
   - component: {fileID: 1417039694}
-  - component: {fileID: 1417039695}
   m_Layer: 0
   m_Name: CubeTerrain
   m_TagString: Untagged
@@ -10267,28 +10266,12 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417039689}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &1417039695
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417039689}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &1422845534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1959003877435212, guid: 63f47f4ea8060544ea9cf1a1d8421d20, type: 3}
@@ -18953,6 +18936,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3918952887604475886, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6006391937554436254, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
+      propertyPath: itemIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 91bab882f3dc60648898063d0d076da6, type: 3}
     - target: {fileID: 6006391937554436254, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
       propertyPath: inputCanvas
       value: 
@@ -21114,6 +21105,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2690410599078675645, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
+      propertyPath: itemIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 720c80409a23d864db9a624f102ddfba, type: 3}
     - target: {fileID: 2690410599078675645, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
       propertyPath: inputCanvas
       value: 
@@ -24406,6 +24401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropPosition: {fileID: 1406179895}
+  slotIcon: {fileID: 365049830}
   inventory: []
 --- !u!4 &9006568740145171125
 Transform:
