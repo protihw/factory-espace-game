@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 941648576187566810}
   - component: {fileID: 8792680179616547095}
-  - component: {fileID: 9125211726328424866}
   - component: {fileID: 3918952887604475886}
   - component: {fileID: 6006391937554436254}
   m_Layer: 0
@@ -52,19 +51,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.15, y: 14, z: 7.65}
   m_Center: {x: 0.05, y: -1, z: 0.05}
---- !u!65 &9125211726328424866
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457881483619192928}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3918952887604475886
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -94,6 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: FlashLight
+  itemIcon: {fileID: 0}
   inputCanvas: {fileID: 0}
   inputCanvasPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1078839859169532066

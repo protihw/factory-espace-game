@@ -69,6 +69,7 @@ namespace StarterAssets
 
         public GameObject atualHit;
         public bool hitting;
+        public Light spotLight;
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
 #endif
@@ -129,6 +130,14 @@ namespace StarterAssets
             {
                 atualHit.GetComponent<CollectableObject>().inputCanvas.SetActive(false);
                 atualHit = null;
+            }
+
+            if (Input.GetKeyDown(KeyCode.V))
+            {
+                if (PlayerInventory.Instance.inventory.Exists(item => item.itemName == "FlashLight")) 
+                {
+                    spotLight.enabled = !spotLight.enabled;
+                }
             }
         }
 
