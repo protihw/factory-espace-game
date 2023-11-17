@@ -5,6 +5,7 @@ public class PlayerInventory : MonoBehaviour
 {
     private static PlayerInventory instance;
     private GameObject myPrefab;
+    public Transform dropPosition;
     public static PlayerInventory Instance
     {
         get
@@ -43,7 +44,7 @@ public class PlayerInventory : MonoBehaviour
     {
         if (inventory.Count == 1 && myPrefab != null)
         {
-            GameObject reactivatedObject = Instantiate(myPrefab, transform.position, Quaternion.identity);
+            GameObject reactivatedObject = Instantiate(myPrefab, dropPosition.position, Quaternion.identity);
             reactivatedObject.SetActive(true);
 
             inventory.Clear();
