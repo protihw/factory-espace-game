@@ -41,7 +41,6 @@ public class PlayerInventory : MonoBehaviour
     {
         inventory.Add(item);
         myPrefab = prefab;
-        Debug.Log("Item adicionado ao inventário: " + item.itemName);
         slotIcon.sprite = item.itemIcon;
         slotIcon.gameObject.SetActive(true);
     }
@@ -56,7 +55,6 @@ public class PlayerInventory : MonoBehaviour
             inventory.Clear();
             myPrefab = null;
 
-            Debug.Log("Item removido do inventário");
             slotIcon.sprite = null;
             slotIcon.gameObject.SetActive(false);
         }

@@ -3581,7 +3581,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623145039}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
@@ -9840,6 +9840,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0767026, y: 7.4253597, z: 2.0769932}
   m_Center: {x: -0.060428575, y: -0.58756506, z: -0.000052571297}
+--- !u!54 &1655592850
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655592842}
+  serializedVersion: 2
+  m_Mass: 0.55
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1659141238 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1457548556901725423, guid: f4947b80397052a418e68e2ffca331dc, type: 3}
@@ -16032,7 +16048,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3918952887604475886, guid: 538339456c540ce4099a5ec66a4765b7, type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Mass
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
@@ -17532,6 +17552,7 @@ GameObject:
   - component: {fileID: 5393215578678897148}
   - component: {fileID: 5393215578678897149}
   - component: {fileID: 5393215578678897138}
+  - component: {fileID: 5393215578678897150}
   m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
@@ -17618,6 +17639,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &5393215578678897150
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5393215578678897136}
+  serializedVersion: 2
+  m_Mass: 70
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!33 &5416817990363192273
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18324,6 +18361,10 @@ PrefabInstance:
     - target: {fileID: 8111049161247972276, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8548511472112481093, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
+      propertyPath: m_Mass
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 8548511472112481093, guid: 29523904c95a1164eb027c7a09fafb6d, type: 3}
       propertyPath: m_UseGravity
