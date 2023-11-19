@@ -67,8 +67,9 @@ namespace StarterAssets
         private float _jumpTimeoutDelta;
         private float _fallTimeoutDelta;
 
-        public GameObject atualHit;
-        public bool hitting;
+        private GameObject atualHit;
+        private bool hitting;
+        private bool reflecting;
         public Light spotLight;
         private bool hasFlashLight;
 #if ENABLE_INPUT_SYSTEM
@@ -126,6 +127,7 @@ namespace StarterAssets
             GroundedCheck();
             Move();
             RaycastCamera();
+            RaycastFlashLight();
 
             if (atualHit != null && hitting == false)
             {
@@ -149,6 +151,15 @@ namespace StarterAssets
                 {
                     spotLight.enabled = !spotLight.enabled;
                 }
+            }
+
+            if (reflecting && hasFlashLight && spotLight.enabled)
+            {
+                MirrorActions.instance.LightOn();
+            }
+            else
+            {
+                MirrorActions.instance.LightOff();
             }
         }
 
@@ -177,6 +188,29 @@ namespace StarterAssets
             else
             {
                 hitting = false;
+
+            }
+        }
+
+        void RaycastFlashLight()
+        {
+            Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+            RaycastHit hit;
+            float distance = 3f;
+
+            int layerMask = 1 << LayerMask.NameToLayer("Ignore Raycast");
+
+            if (Physics.Raycast(ray, out hit, distance, ~layerMask))
+            {
+
+                if (hit.transform.tag == "Mirror")
+                {
+                    reflecting = true;
+                }
+            }
+            else
+            {
+                reflecting = false;
 
             }
         }
