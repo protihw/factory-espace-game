@@ -33,8 +33,17 @@ public class Clock : MonoBehaviour
             seconds = now.Second;
 
             // Calcula o tempo limite (tempo atual + 30 minutos)
-            limitTime = hour * 60 + minutes + 1;
+            limitTime = hour * 60 + minutes + 30;
         }
+    }
+
+    void OnEnable()
+    {
+        minutes = 0;
+        hour = 0;
+        seconds = 0;
+
+        limitTime = hour * 60 + minutes + 30;
     }
 
     void Update()
@@ -73,8 +82,6 @@ public class Clock : MonoBehaviour
         if (realTime && (hour * 60 + minutes) >= limitTime)
         {
             // Carrega a cena 0
-            limitTime = 0;
-            Debug.Log("isso");
             SceneManager.LoadScene(0);
         }
     }
