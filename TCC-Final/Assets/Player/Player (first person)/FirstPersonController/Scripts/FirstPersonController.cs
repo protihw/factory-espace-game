@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using Unity.VisualScripting;
+using UnityEditor.Build;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -67,11 +68,22 @@ namespace StarterAssets
         private float _jumpTimeoutDelta;
         private float _fallTimeoutDelta;
 
+        // itens
+        [SerializeField]
+        private GameObject crossNormal;
+        [SerializeField]
+        private GameObject crossGrab;
         private GameObject atualHit;
         private bool hitting;
+
+        // flashlights
+        [SerializeField]
+        private Light spotLight;
         private bool reflecting;
-        public Light spotLight;
+        private bool issuing;
         private bool hasFlashLight;
+        private bool hasFlashLightUV;
+
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
 #endif
@@ -131,8 +143,8 @@ namespace StarterAssets
 
             if (atualHit != null && hitting == false)
             {
-                atualHit.GetComponent<CollectableObject>().inputCanvas.SetActive(false);
-                atualHit = null;
+                crossNormal.gameObject.SetActive(true);
+                crossGrab.gameObject.SetActive(false);
             }
 
             if (PlayerInventory.Instance.inventory.Exists(item => item.itemName == "FlashLight"))
@@ -151,6 +163,21 @@ namespace StarterAssets
                 {
                     spotLight.enabled = !spotLight.enabled;
                 }
+
+                if (hasFlashLightUV && spotLight.enabled)
+                {
+                    if (Input.GetKeyDown(KeyCode.R))
+                    {
+                        if (spotLight.color == Color.white)
+                        {
+                            spotLight.color = Color.magenta;
+                        }
+                        else
+                        {
+                            spotLight.color = Color.white;
+                        }
+                    }
+                }
             }
 
             if (reflecting && hasFlashLight && spotLight.enabled)
@@ -160,6 +187,15 @@ namespace StarterAssets
             else
             {
                 MirrorActions.instance.LightOff();
+            }
+
+            if (issuing && hasFlashLight && spotLight.enabled && spotLight.color == Color.magenta)
+            {
+                UVActions.Instance.ChangeToNewTexture();
+            }
+            else
+            {
+                UVActions.Instance.ChangeToOldTexture();
             }
         }
 
@@ -175,13 +211,29 @@ namespace StarterAssets
             {
                 if (hit.transform.tag == "Object")
                 {
+                    crossNormal.gameObject.SetActive(false);
+                    crossGrab.gameObject.SetActive(true);
+
                     atualHit = hit.transform.gameObject;
-                    atualHit.GetComponent<CollectableObject>().inputCanvas.SetActive(true);
                     hitting = true;
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         CollectItem();
+                    }
+                }
+
+                if (hit.transform.tag == "Util")
+                {
+                    crossNormal.gameObject.SetActive(false);
+                    crossGrab.gameObject.SetActive(true);
+
+                    atualHit = hit.transform.gameObject;
+                    hitting = true;
+
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        CollectUtil();
                     }
                 }
             }
@@ -207,11 +259,16 @@ namespace StarterAssets
                 {
                     reflecting = true;
                 }
+
+                if (hit.transform.tag == "UV")
+                {
+                    issuing = true;
+                }
             }
             else
             {
                 reflecting = false;
-
+                issuing = false;
             }
         }
 
@@ -235,6 +292,18 @@ namespace StarterAssets
                     {
                         Debug.Log(">>> Você possui um item em seu inventário. Descarte-o antes de realizar esta ação.");
                     }
+                }
+            }
+        }
+
+        void CollectUtil()
+        {
+            if (atualHit != null)
+            {
+                if (atualHit.gameObject.GetComponent<CollectableObject>().itemName == "LightBulb")
+                {
+                    atualHit.SetActive(false);
+                    hasFlashLightUV = true;
                 }
             }
         }
