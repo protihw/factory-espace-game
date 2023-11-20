@@ -7,8 +7,6 @@ public class UVActions : MonoBehaviour
     public Texture newTexture;
     public Texture oldTexture;
 
-    private bool useNewTexture = false; // Inicia com a textura antiga
-
     public void Awake()
     {
         Instance = this;
@@ -30,7 +28,6 @@ public class UVActions : MonoBehaviour
     {
         if (material != null && newTexture != null)
         {
-            useNewTexture = true;
             material.mainTexture = newTexture;
         }
     }
@@ -39,7 +36,6 @@ public class UVActions : MonoBehaviour
     {
         if (material != null && oldTexture != null)
         {
-            useNewTexture = false;
             material.mainTexture = oldTexture;
         }
     }
