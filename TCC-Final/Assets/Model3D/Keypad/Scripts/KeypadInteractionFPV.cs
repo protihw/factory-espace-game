@@ -13,11 +13,15 @@ public class KeypadInteractionFPV : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("CHEGUEI AQUI 1");
+
             if (Physics.Raycast(ray, out var hit))
             {
                 if (hit.collider.TryGetComponent(out KeypadButton keypadButton))
                 {
-                    keypadButton.PressButton();
+                        Debug.Log("CHEGUEI AQUI 2");
+
+                        keypadButton.PressButton();
                 }
             }
         }
