@@ -11,7 +11,7 @@ public class Keypad : MonoBehaviour
     [SerializeField] private UnityEvent onAccessGranted;
     [SerializeField] private UnityEvent onAccessDenied;
     [Header("Combination Code (9 Numbers Max)")]
-    [SerializeField] private int keypadCombo = 191723;
+    [SerializeField] private int keypadCombo = 12345;
 
     public UnityEvent OnAccessGranted => onAccessGranted;
     public UnityEvent OnAccessDenied => onAccessDenied;
@@ -47,7 +47,6 @@ public class Keypad : MonoBehaviour
         ClearInput();
         panelMesh.material.SetVector("_EmissionColor", screenNormalColor * screenIntensity);
     }
-
 
     //Gets value from pressedbutton
     public void AddInput(string input)
