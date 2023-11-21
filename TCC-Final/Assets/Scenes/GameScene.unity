@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4339898394216490, guid: 6c9e41e24d2bc6b488c927f43944457b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.11
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 4339898394216490, guid: 6c9e41e24d2bc6b488c927f43944457b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1361,7 +1361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 549c652b92c17f844836e83a9accd4d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -52.17
+      value: -52.46
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 549c652b92c17f844836e83a9accd4d2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12468,7 +12468,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 37b93f96aa7ff3b4aaee71d6cf426775, type: 2}
+  - {fileID: 2100000, guid: 5f73475cf0cad364b9800b85c2a229fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18656,6 +18656,7 @@ GameObject:
   - component: {fileID: 6827449520134369321}
   - component: {fileID: 1715877486746598393}
   - component: {fileID: 8590996757537107748}
+  - component: {fileID: 8590996757537107749}
   m_Layer: 0
   m_Name: forSaleDecal
   m_TagString: Untagged
@@ -18763,6 +18764,7 @@ GameObject:
   - component: {fileID: 2634227114565317688}
   - component: {fileID: 5940975436627245382}
   - component: {fileID: 7711374196852844601}
+  - component: {fileID: 7711374196852844602}
   m_Layer: 0
   m_Name: garageRoof
   m_TagString: Untagged
@@ -18862,6 +18864,7 @@ GameObject:
   - component: {fileID: 6215647759615776425}
   - component: {fileID: 5764344038273014678}
   - component: {fileID: 6223847938492616755}
+  - component: {fileID: 6223847938492616756}
   m_Layer: 0
   m_Name: small-Garage-Walls.009
   m_TagString: Untagged
@@ -19381,6 +19384,7 @@ GameObject:
   - component: {fileID: 4228290007076155782}
   - component: {fileID: 6789145205605460516}
   - component: {fileID: 5030822410952272717}
+  - component: {fileID: 6789145205605460517}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.005
   m_TagString: Untagged
@@ -19530,6 +19534,7 @@ GameObject:
   - component: {fileID: 9182500043565847526}
   - component: {fileID: 1127848396934075253}
   - component: {fileID: 5096718996534099217}
+  - component: {fileID: 9182500043565847527}
   m_Layer: 0
   m_Name: rusty-light-bulb.001
   m_TagString: Untagged
@@ -19548,6 +19553,7 @@ GameObject:
   - component: {fileID: 3904093777340067399}
   - component: {fileID: 2552995228758658739}
   - component: {fileID: 2696902561643379373}
+  - component: {fileID: 3904093777340067400}
   m_Layer: 0
   m_Name: garageGate.007
   m_TagString: Untagged
@@ -19566,6 +19572,7 @@ GameObject:
   - component: {fileID: 6323374028350369252}
   - component: {fileID: 1487676429073823429}
   - component: {fileID: 4677548511697244187}
+  - component: {fileID: 6323374028350369253}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.010
   m_TagString: Untagged
@@ -19720,6 +19727,7 @@ GameObject:
   - component: {fileID: 8185180086286657767}
   - component: {fileID: 6124097659843569818}
   - component: {fileID: 5008265419443884233}
+  - component: {fileID: 8185180086286657768}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.007
   m_TagString: Untagged
@@ -19780,6 +19788,7 @@ GameObject:
   - component: {fileID: 8857465776083696726}
   - component: {fileID: 4055784790528111098}
   - component: {fileID: 3443638538724037506}
+  - component: {fileID: 8857465776083696727}
   m_Layer: 0
   m_Name: ruined door with wire.003
   m_TagString: Untagged
@@ -19907,6 +19916,7 @@ GameObject:
   - component: {fileID: 1539151529501864456}
   - component: {fileID: 1840286699321544621}
   - component: {fileID: 2944747969519866370}
+  - component: {fileID: 2944747969519866371}
   m_Layer: 0
   m_Name: small-Garage-Walls.025
   m_TagString: Untagged
@@ -20237,6 +20247,7 @@ GameObject:
   - component: {fileID: 8594768823514281709}
   - component: {fileID: 7201899309660504022}
   - component: {fileID: 3112688912522804284}
+  - component: {fileID: 8594768823514281710}
   m_Layer: 0
   m_Name: light57w.002
   m_TagString: Untagged
@@ -20289,6 +20300,7 @@ GameObject:
   - component: {fileID: 6331317442326532373}
   - component: {fileID: 3030135065299834188}
   - component: {fileID: 3885468642982631941}
+  - component: {fileID: 6331317442326532374}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.011
   m_TagString: Untagged
@@ -20340,6 +20352,7 @@ GameObject:
   - component: {fileID: 5537189388067831206}
   - component: {fileID: 7986831149450734401}
   - component: {fileID: 3502977335323949928}
+  - component: {fileID: 7986831149450734402}
   m_Layer: 0
   m_Name: rusty-light-bulb.008
   m_TagString: Untagged
@@ -20474,6 +20487,7 @@ GameObject:
   - component: {fileID: 6190545336166078223}
   - component: {fileID: 1332804967797849050}
   - component: {fileID: 1004925653874222280}
+  - component: {fileID: 6190545336166078224}
   m_Layer: 0
   m_Name: garageGate.004
   m_TagString: Untagged
@@ -20690,6 +20704,7 @@ GameObject:
   - component: {fileID: 3788389193351030099}
   - component: {fileID: 5554750661102376489}
   - component: {fileID: 7834448108754262807}
+  - component: {fileID: 7834448108754262808}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.012
   m_TagString: Untagged
@@ -20787,6 +20802,7 @@ GameObject:
   - component: {fileID: 1035270892112665651}
   - component: {fileID: 253533080921025448}
   - component: {fileID: 1228501541686342839}
+  - component: {fileID: 1639658515263886751}
   m_Layer: 0
   m_Name: garageGate.002
   m_TagString: Untagged
@@ -20794,6 +20810,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1639658515263886751
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639658515263886750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2175102480713769279, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!33 &1649801287406192855
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21136,6 +21166,7 @@ GameObject:
   - component: {fileID: 1924681418246020819}
   - component: {fileID: 8753565219805250630}
   - component: {fileID: 958242676015341741}
+  - component: {fileID: 8753565219805250631}
   m_Layer: 0
   m_Name: rusty-light-bulb.003
   m_TagString: Untagged
@@ -21541,6 +21572,7 @@ GameObject:
   - component: {fileID: 7913553362131240651}
   - component: {fileID: 5301864895911383431}
   - component: {fileID: 3741003466157685867}
+  - component: {fileID: 7913553362131240652}
   m_Layer: 0
   m_Name: small-Garage-Floor.006
   m_TagString: Untagged
@@ -21683,6 +21715,7 @@ GameObject:
   - component: {fileID: 7208050318445396678}
   - component: {fileID: 8239596951271970220}
   - component: {fileID: 4484455091420485994}
+  - component: {fileID: 8239596951271970221}
   m_Layer: 0
   m_Name: small-Garage-Walls.015
   m_TagString: Untagged
@@ -21743,6 +21776,7 @@ GameObject:
   - component: {fileID: 5459694354563516005}
   - component: {fileID: 308079525094763249}
   - component: {fileID: 2329561715317598010}
+  - component: {fileID: 5459694354563516006}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.002
   m_TagString: Untagged
@@ -21908,6 +21942,7 @@ GameObject:
   - component: {fileID: 9036514039062108198}
   - component: {fileID: 4048551817058890956}
   - component: {fileID: 217871961580947722}
+  - component: {fileID: 9036514039062108199}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.001
   m_TagString: Untagged
@@ -22177,6 +22212,7 @@ GameObject:
   - component: {fileID: 2695735261911784124}
   - component: {fileID: 4746840520503328590}
   - component: {fileID: 5305350423100261342}
+  - component: {fileID: 5305350423100261343}
   m_Layer: 0
   m_Name: small-Garage-Floor.001
   m_TagString: Untagged
@@ -22316,6 +22352,7 @@ GameObject:
   - component: {fileID: 2704753142437148134}
   - component: {fileID: 4116797707787973931}
   - component: {fileID: 2963283598671901342}
+  - component: {fileID: 4116797707787973932}
   m_Layer: 0
   m_Name: garageGate.001
   m_TagString: Untagged
@@ -22560,6 +22597,7 @@ GameObject:
   - component: {fileID: 3359888139967438323}
   - component: {fileID: 8950365556478696811}
   - component: {fileID: 5971645166026864655}
+  - component: {fileID: 8950365556478696812}
   m_Layer: 0
   m_Name: garageGate.003
   m_TagString: Untagged
@@ -22620,6 +22658,7 @@ GameObject:
   - component: {fileID: 3641521692140895540}
   - component: {fileID: 3507812301286188442}
   - component: {fileID: 3774318431063322433}
+  - component: {fileID: 3774318431063322434}
   m_Layer: 0
   m_Name: rusty-light-bulb.005
   m_TagString: Untagged
@@ -22638,6 +22677,7 @@ GameObject:
   - component: {fileID: 2273260680503717239}
   - component: {fileID: 3402496028425056435}
   - component: {fileID: 836500832104205861}
+  - component: {fileID: 3402496028425056436}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.006
   m_TagString: Untagged
@@ -22787,6 +22827,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2944747969519866371
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937651401353169719}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9019689933496504880, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!23 &2963283598671901342
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22872,6 +22926,7 @@ GameObject:
   - component: {fileID: 6114256923972700142}
   - component: {fileID: 6020243685808455621}
   - component: {fileID: 6873232607655676706}
+  - component: {fileID: 6873232607655676707}
   m_Layer: 0
   m_Name: small-Garage-Walls.002
   m_TagString: Untagged
@@ -22947,6 +23002,7 @@ GameObject:
   - component: {fileID: 4173713018987621015}
   - component: {fileID: 333182226667023725}
   - component: {fileID: 8883328241177594083}
+  - component: {fileID: 8883328241177594084}
   m_Layer: 0
   m_Name: rusty-light-bulb.007
   m_TagString: Untagged
@@ -22965,6 +23021,7 @@ GameObject:
   - component: {fileID: 4756341766378486239}
   - component: {fileID: 1302949266943452856}
   - component: {fileID: 396735907643027352}
+  - component: {fileID: 4756341766378486240}
   m_Layer: 0
   m_Name: small-Garage-Walls.010
   m_TagString: Untagged
@@ -23209,6 +23266,7 @@ GameObject:
   - component: {fileID: 2590389671965642216}
   - component: {fileID: 6182948286162180676}
   - component: {fileID: 793432409396925144}
+  - component: {fileID: 6182948286162180677}
   m_Layer: 0
   m_Name: small-Garage-Floor.003
   m_TagString: Untagged
@@ -23271,6 +23329,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2808359182805659232}
   m_Mesh: {fileID: -2650881790738514936, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &3402496028425056436
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808359182805659232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2650881790738514936, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &3436976630621483581
 GameObject:
   m_ObjectHideFlags: 0
@@ -23282,6 +23354,7 @@ GameObject:
   - component: {fileID: 2620126856281071436}
   - component: {fileID: 9045104996202233614}
   - component: {fileID: 5428132910230607502}
+  - component: {fileID: 9045104996202233615}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.003
   m_TagString: Untagged
@@ -23300,6 +23373,7 @@ GameObject:
   - component: {fileID: 8985139454032444749}
   - component: {fileID: 8572078853022600438}
   - component: {fileID: 1759309190465405271}
+  - component: {fileID: 8985139454032444750}
   m_Layer: 0
   m_Name: small-Garage-Walls.004
   m_TagString: Untagged
@@ -24069,6 +24143,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3774318431063322434
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2793384431211969119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4950552371460973592, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &3777212660520210212
 Transform:
   m_ObjectHideFlags: 0
@@ -24292,6 +24380,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &3904093777340067400
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662789585206142783}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6410741262561040204, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &3906377105634781297
 Transform:
   m_ObjectHideFlags: 0
@@ -24608,6 +24710,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2716518190743292408}
   m_Mesh: {fileID: 448630952611910259, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &4116797707787973932
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2716518190743292408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 448630952611910259, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &4135013735444989114
 Transform:
   m_ObjectHideFlags: 0
@@ -24713,6 +24829,7 @@ GameObject:
   - component: {fileID: 5966264878382646594}
   - component: {fileID: 1596906962983459823}
   - component: {fileID: 7019204943824010084}
+  - component: {fileID: 7019204943824010085}
   m_Layer: 0
   m_Name: small-Garage-Floor.002
   m_TagString: Untagged
@@ -24746,6 +24863,7 @@ GameObject:
   - component: {fileID: 8200972815489904417}
   - component: {fileID: 1508075994223292212}
   - component: {fileID: 3140525288822952321}
+  - component: {fileID: 8200972815489904418}
   m_Layer: 0
   m_Name: garageGate.005
   m_TagString: Untagged
@@ -24821,6 +24939,7 @@ GameObject:
   - component: {fileID: 8071739607022911327}
   - component: {fileID: 6148082541705413007}
   - component: {fileID: 3770944801859514803}
+  - component: {fileID: 8071739607022911328}
   m_Layer: 0
   m_Name: small-Garage-Walls.023
   m_TagString: Untagged
@@ -25411,6 +25530,7 @@ GameObject:
   - component: {fileID: 1092414271398874168}
   - component: {fileID: 1854384930308104657}
   - component: {fileID: 5980601055556961986}
+  - component: {fileID: 5980601055556961987}
   m_Layer: 0
   m_Name: rusty-light-bulb.010
   m_TagString: Untagged
@@ -25445,6 +25565,7 @@ GameObject:
   - component: {fileID: 7640835526281280467}
   - component: {fileID: 1512070958488836768}
   - component: {fileID: 4028620512345586296}
+  - component: {fileID: 7640835526281280468}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.008
   m_TagString: Untagged
@@ -25471,6 +25592,7 @@ GameObject:
   - component: {fileID: 5585236268092963086}
   - component: {fileID: 656492195297283888}
   - component: {fileID: 6140874346417794554}
+  - component: {fileID: 6140874346417794555}
   m_Layer: 0
   m_Name: small-Garage-Walls.005
   m_TagString: Untagged
@@ -25625,6 +25747,7 @@ GameObject:
   - component: {fileID: 5584850647336538808}
   - component: {fileID: 4238197691261089367}
   - component: {fileID: 5084108273062020551}
+  - component: {fileID: 5584850647336538809}
   m_Layer: 0
   m_Name: small-Garage-Walls.019
   m_TagString: Untagged
@@ -25643,6 +25766,7 @@ GameObject:
   - component: {fileID: 7149707196605919283}
   - component: {fileID: 5871146006146441471}
   - component: {fileID: 2057791143437809227}
+  - component: {fileID: 7149707196605919284}
   m_Layer: 0
   m_Name: light57w.003
   m_TagString: Untagged
@@ -25715,6 +25839,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &4756341766378486240
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106938799030969292}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4178560888016425479, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &4762312777629259874
 Transform:
   m_ObjectHideFlags: 0
@@ -25791,6 +25929,7 @@ GameObject:
   - component: {fileID: 1342490519641074541}
   - component: {fileID: 3326979073687371160}
   - component: {fileID: 4292055031939688821}
+  - component: {fileID: 4800080063570327517}
   m_Layer: 0
   m_Name: rusty-light-bulb.006
   m_TagString: Untagged
@@ -25798,6 +25937,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &4800080063570327517
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800080063570327516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2468298454003706768, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &4833360830081613547
 GameObject:
   m_ObjectHideFlags: 0
@@ -26025,6 +26178,7 @@ GameObject:
   - component: {fileID: 4612398334532128284}
   - component: {fileID: 5886016890882958417}
   - component: {fileID: 948064549218192577}
+  - component: {fileID: 5886016890882958418}
   m_Layer: 0
   m_Name: ruined door with wire
   m_TagString: Untagged
@@ -26426,6 +26580,7 @@ GameObject:
   - component: {fileID: 6814663127933915677}
   - component: {fileID: 6473044213924120352}
   - component: {fileID: 2094438689367331792}
+  - component: {fileID: 6814663127933915678}
   m_Layer: 0
   m_Name: Decal-baseboardMoss.001
   m_TagString: Untagged
@@ -26628,6 +26783,7 @@ GameObject:
   - component: {fileID: 2247713547342088144}
   - component: {fileID: 8170469396072320901}
   - component: {fileID: 5029790240742304717}
+  - component: {fileID: 8170469396072320902}
   m_Layer: 0
   m_Name: ruined door with wire.002
   m_TagString: Untagged
@@ -26693,6 +26849,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5305350423100261343
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2644796341360016026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3770227874514463064, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &5335495653265102158
 GameObject:
   m_ObjectHideFlags: 0
@@ -26737,6 +26907,7 @@ GameObject:
   - component: {fileID: 4094865459532149735}
   - component: {fileID: 8458222456466133031}
   - component: {fileID: 7626999146331899256}
+  - component: {fileID: 8458222456466133032}
   m_Layer: 0
   m_Name: garageRoof.001
   m_TagString: Untagged
@@ -27049,6 +27220,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &5459694354563516006
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2386253863015800375}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8841206554010962223, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &5476943420096142604
 Transform:
   m_ObjectHideFlags: 0
@@ -27273,6 +27458,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &5584850647336538809
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4700948998901848713}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5714051740268122947, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &5585236268092963086
 Transform:
   m_ObjectHideFlags: 0
@@ -27568,6 +27767,7 @@ GameObject:
   - component: {fileID: 2641106840154668894}
   - component: {fileID: 5278144040299586051}
   - component: {fileID: 8780350010166041411}
+  - component: {fileID: 8780350010166041412}
   m_Layer: 0
   m_Name: small-Garage-Walls.017
   m_TagString: Untagged
@@ -27739,6 +27939,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4928125255106874947}
+  m_Mesh: {fileID: 3149407349716237891, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &5886016890882958418
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4928125255106874947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 3149407349716237891, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1001 &5925687319878770399
 PrefabInstance:
@@ -27974,6 +28188,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5980601055556961987
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571820819835462079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6245079290438138516, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &5990737224507853004
 Transform:
   m_ObjectHideFlags: 0
@@ -28186,6 +28414,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6140874346417794555
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4604944812306450330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4930117990257087211, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!33 &6148082541705413007
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -28205,6 +28447,7 @@ GameObject:
   - component: {fileID: 6458413416848975843}
   - component: {fileID: 1938577655482047670}
   - component: {fileID: 3884317978569519826}
+  - component: {fileID: 6458413416848975844}
   m_Layer: 0
   m_Name: rusty-light-bulb.004
   m_TagString: Untagged
@@ -28251,6 +28494,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3318828918093106360}
   m_Mesh: {fileID: -953386446081638769, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &6182948286162180677
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3318828918093106360}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -953386446081638769, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!33 &6189399717525036478
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -28274,6 +28531,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &6190545336166078224
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300295487545138660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 570802051153148565, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &6200755157834239196
 Transform:
   m_ObjectHideFlags: 0
@@ -28346,6 +28617,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6223847938492616756
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187616781898636769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4379830638248290016, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &6249600561709060237
 GameObject:
   m_ObjectHideFlags: 0
@@ -28420,6 +28705,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &6323374028350369253
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701592274053452406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8934707580608996278, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &6331317442326532373
 Transform:
   m_ObjectHideFlags: 0
@@ -28435,6 +28734,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &6331317442326532374
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160647102658752395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7972008501041504245, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!33 &6340011945156641281
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -28502,6 +28815,7 @@ GameObject:
   - component: {fileID: 2728383145186687012}
   - component: {fileID: 3546189201351264283}
   - component: {fileID: 7976728329255947791}
+  - component: {fileID: 7976728329255947792}
   m_Layer: 0
   m_Name: rusty-light-bulb.009
   m_TagString: Untagged
@@ -28572,6 +28886,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &6458413416848975844
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6159086960137913860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 111148407365996703, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &6458835110909460977
 GameObject:
   m_ObjectHideFlags: 0
@@ -28583,6 +28911,7 @@ GameObject:
   - component: {fileID: 628997024965742214}
   - component: {fileID: 1149859218633738826}
   - component: {fileID: 4491315349654797708}
+  - component: {fileID: 6458835110909460978}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling
   m_TagString: Untagged
@@ -28590,6 +28919,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &6458835110909460978
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458835110909460977}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1900266338080276958, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &6471549906881951009
 GameObject:
   m_ObjectHideFlags: 0
@@ -28656,6 +28999,7 @@ GameObject:
   - component: {fileID: 153895331067015433}
   - component: {fileID: 8663174495272694375}
   - component: {fileID: 4179437537075455593}
+  - component: {fileID: 8663174495272694376}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.009
   m_TagString: Untagged
@@ -28768,6 +29112,7 @@ GameObject:
   - component: {fileID: 7336188349090918951}
   - component: {fileID: 4600481939894172869}
   - component: {fileID: 8219678828696534308}
+  - component: {fileID: 8219678828696534309}
   m_Layer: 0
   m_Name: light57w.004
   m_TagString: Untagged
@@ -28841,6 +29186,7 @@ GameObject:
   - component: {fileID: 47027246332078705}
   - component: {fileID: 5564907012757575584}
   - component: {fileID: 6681851351999193677}
+  - component: {fileID: 6681851351999193678}
   m_Layer: 0
   m_Name: small-Garage-Floor.004
   m_TagString: Untagged
@@ -28922,6 +29268,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6681851351999193678
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620973317118849413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6412347091379197592, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &6686683957222015909
 GameObject:
   m_ObjectHideFlags: 0
@@ -28964,6 +29324,7 @@ GameObject:
   - component: {fileID: 6555529899101405674}
   - component: {fileID: 6590884809229625440}
   - component: {fileID: 6875075566818883827}
+  - component: {fileID: 6875075566818883828}
   m_Layer: 0
   m_Name: light57w.001
   m_TagString: Untagged
@@ -29052,6 +29413,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560691191930620743}
   m_Mesh: {fileID: -1039088511233495247, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &6789145205605460517
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560691191930620743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1039088511233495247, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &6814663127933915677
 Transform:
   m_ObjectHideFlags: 0
@@ -29067,6 +29442,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &6814663127933915678
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5145590985528311088}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -53744193573778829, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &6827449520134369321
 Transform:
   m_ObjectHideFlags: 0
@@ -29152,6 +29541,7 @@ GameObject:
   - component: {fileID: 1821307792318748652}
   - component: {fileID: 2837993642935078791}
   - component: {fileID: 2536319187346824410}
+  - component: {fileID: 6863602812802770993}
   m_Layer: 0
   m_Name: rusty-light-bulb.002
   m_TagString: Untagged
@@ -29159,6 +29549,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &6863602812802770993
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6863602812802770992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1293583438748279855, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!23 &6873232607655676706
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29201,6 +29605,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6873232607655676707
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3005734459374248072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9197457118724002613, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!23 &6875075566818883827
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29243,6 +29661,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6875075566818883828
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6731657946644358908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6114787835770381967, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &6875167374364595160
 GameObject:
   m_ObjectHideFlags: 0
@@ -29285,6 +29717,7 @@ GameObject:
   - component: {fileID: 7288463767552183661}
   - component: {fileID: 5656058414032212532}
   - component: {fileID: 4079154147535290317}
+  - component: {fileID: 7288463767552183662}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.004
   m_TagString: Untagged
@@ -29440,6 +29873,7 @@ GameObject:
   - component: {fileID: 4388625448321576124}
   - component: {fileID: 3729498165418698984}
   - component: {fileID: 2024246662578934775}
+  - component: {fileID: 6997342507142653228}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.014
   m_TagString: Untagged
@@ -29447,6 +29881,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &6997342507142653228
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6997342507142653227}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8261291594468418820, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &7010291696244489109
 GameObject:
   m_ObjectHideFlags: 0
@@ -29458,6 +29906,7 @@ GameObject:
   - component: {fileID: 6160316603506879002}
   - component: {fileID: 6528061082321268320}
   - component: {fileID: 5241941846166734039}
+  - component: {fileID: 7010291696244489110}
   m_Layer: 0
   m_Name: garageGate
   m_TagString: Untagged
@@ -29465,6 +29914,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &7010291696244489110
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7010291696244489109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1307377325803897547, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &7014406648342951792
 GameObject:
   m_ObjectHideFlags: 0
@@ -29525,6 +29988,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7019204943824010085
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4144384516825564337}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7594973102383543982, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!23 &7059686760471564553
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29706,6 +30183,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7149707196605919284
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719858099930736655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5300502427350838115, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &7159951709261507315
 GameObject:
   m_ObjectHideFlags: 0
@@ -29850,6 +30341,7 @@ GameObject:
   - component: {fileID: 4108397190863906316}
   - component: {fileID: 374250497394749366}
   - component: {fileID: 5584281719713316766}
+  - component: {fileID: 7276809063821635522}
   m_Layer: 0
   m_Name: garageGate.006
   m_TagString: Untagged
@@ -29857,6 +30349,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &7276809063821635522
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7276809063821635521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4632246508618424130, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &7288463767552183661
 Transform:
   m_ObjectHideFlags: 0
@@ -29872,6 +30378,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7288463767552183662
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6902872729058054458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5530203122451132780, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &7293067730291827744
 GameObject:
   m_ObjectHideFlags: 0
@@ -29883,6 +30403,7 @@ GameObject:
   - component: {fileID: 5615709035898632449}
   - component: {fileID: 153936701740527043}
   - component: {fileID: 5188418939143516107}
+  - component: {fileID: 7293067730291827745}
   m_Layer: 0
   m_Name: small-Garage-Walls.001
   m_TagString: Untagged
@@ -29890,6 +30411,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &7293067730291827745
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7293067730291827744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6272784037781225574, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &7293900361872952196
 GameObject:
   m_ObjectHideFlags: 0
@@ -30382,6 +30917,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7640835526281280468
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4587622967507396862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6937859531022092736, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!33 &7656147687901429342
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -30401,6 +30950,7 @@ GameObject:
   - component: {fileID: 1060226702289956596}
   - component: {fileID: 8566295788264234397}
   - component: {fileID: 3952070351604531215}
+  - component: {fileID: 8566295788264234398}
   m_Layer: 0
   m_Name: forSaleDecal.001
   m_TagString: Untagged
@@ -30466,6 +31016,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7711374196852844602
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141190803395471297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4251644486245480257, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &7712196490812179020
 Transform:
   m_ObjectHideFlags: 0
@@ -30604,6 +31168,7 @@ GameObject:
   - component: {fileID: 584217539200938550}
   - component: {fileID: 4967468244489597083}
   - component: {fileID: 4725279536832843200}
+  - component: {fileID: 7776623855032772742}
   m_Layer: 0
   m_Name: small-Garage-Floor.005
   m_TagString: Untagged
@@ -30611,6 +31176,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &7776623855032772742
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7776623855032772741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6539737181884728723, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &7816598826173403253
 GameObject:
   m_ObjectHideFlags: 0
@@ -30703,6 +31282,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7834448108754262808
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553104226258858356}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1958758047171461016, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &7865365029061894158
 Transform:
   m_ObjectHideFlags: 0
@@ -30732,6 +31325,7 @@ GameObject:
   - component: {fileID: 3717443014408484324}
   - component: {fileID: 7327885700048661661}
   - component: {fileID: 7164114411166889816}
+  - component: {fileID: 7906235421291475213}
   m_Layer: 0
   m_Name: small-Garage-Walls.003
   m_TagString: Untagged
@@ -30739,6 +31333,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &7906235421291475213
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7906235421291475212}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4512770442325399139, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &7913553362131240651
 Transform:
   m_ObjectHideFlags: 0
@@ -30754,6 +31362,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7913553362131240652
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2282409992417647910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2086473776608071208, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &7915016653667309343
 GameObject:
   m_ObjectHideFlags: 0
@@ -30948,6 +31570,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7976728329255947792
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6418771495956328562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8204833805066716853, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &7983258073794684054
 GameObject:
   m_ObjectHideFlags: 0
@@ -30971,6 +31607,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201358200513959119}
+  m_Mesh: {fileID: 7592294799479755726, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &7986831149450734402
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201358200513959119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7592294799479755726, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &7989050613702953541
 GameObject:
@@ -31138,6 +31788,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8071739607022911328
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180271321464479522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9154596552087852745, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &8076466712906226082
 Transform:
   m_ObjectHideFlags: 0
@@ -31261,6 +31925,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5259838728762165772}
   m_Mesh: {fileID: -6300609256075427839, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &8170469396072320902
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5259838728762165772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6300609256075427839, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &8185180086286657767
 Transform:
   m_ObjectHideFlags: 0
@@ -31276,6 +31954,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8185180086286657768
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824304251319418144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4689062473694444247, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &8200972815489904417
 Transform:
   m_ObjectHideFlags: 0
@@ -31291,6 +31983,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8200972815489904418
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4171914536544142633}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1632364644626556878, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!23 &8219678828696534308
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31333,6 +32039,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8219678828696534309
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6558289903099672761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8114525262005962615, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &8235012760620767127
 Transform:
   m_ObjectHideFlags: 0
@@ -31356,6 +32076,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2352103867953708529}
+  m_Mesh: {fileID: 6660987772987803078, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &8239596951271970221
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2352103867953708529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 6660987772987803078, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!23 &8247994413565432793
 MeshRenderer:
@@ -31484,6 +32218,7 @@ GameObject:
   - component: {fileID: 7753941881049794710}
   - component: {fileID: 8641882430886558427}
   - component: {fileID: 8897875949634365708}
+  - component: {fileID: 8897875949634365709}
   m_Layer: 0
   m_Name: small-Garage-roof-Ceiling.013
   m_TagString: Untagged
@@ -31530,6 +32265,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5341737695631595520}
+  m_Mesh: {fileID: -1024099763444453780, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &8458222456466133032
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5341737695631595520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -1024099763444453780, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &8468360723041599856
 Transform:
@@ -31617,6 +32366,7 @@ GameObject:
   - component: {fileID: 2640307053767377212}
   - component: {fileID: 3323005763972197177}
   - component: {fileID: 4881566892000782561}
+  - component: {fileID: 8551955820707414945}
   m_Layer: 0
   m_Name: ruined door with wire.001
   m_TagString: Untagged
@@ -31624,6 +32374,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8551955820707414945
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8551955820707414944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7245004468411181669, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!33 &8556914324358808467
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -31639,6 +32403,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7675961017878618077}
+  m_Mesh: {fileID: 3290164389970330117, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &8566295788264234398
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7675961017878618077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 3290164389970330117, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!33 &8572078853022600438
 MeshFilter:
@@ -31708,6 +32486,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8590996757537107749
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15188578338078734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3989509269500968959, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &8594768823514281709
 Transform:
   m_ObjectHideFlags: 0
@@ -31723,6 +32515,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8594768823514281710
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109867885189848061}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6589551902749892233, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &8605432293559680451
 GameObject:
   m_ObjectHideFlags: 0
@@ -31988,6 +32794,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6509407506944431568}
   m_Mesh: {fileID: -4553513210152579911, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &8663174495272694376
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6509407506944431568}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4553513210152579911, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &8750093665339879962
 Transform:
   m_ObjectHideFlags: 0
@@ -32011,6 +32831,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913958910439354898}
+  m_Mesh: {fileID: -3747864445932214321, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &8753565219805250631
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913958910439354898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -3747864445932214321, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!23 &8780350010166041411
 MeshRenderer:
@@ -32054,6 +32888,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8780350010166041412
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5776286997467631566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4212867939900064442, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &8792169561940501662
 GameObject:
   m_ObjectHideFlags: 0
@@ -32117,6 +32965,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8857465776083696727
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862116135672516463}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9153927586556148189, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!23 &8883328241177594083
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32159,6 +33021,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8883328241177594084
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3049557899136334116}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2070792027869157135, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &8890867773605268397
 GameObject:
   m_ObjectHideFlags: 0
@@ -32170,6 +33046,7 @@ GameObject:
   - component: {fileID: 3164140671292525360}
   - component: {fileID: 817764912587388915}
   - component: {fileID: 1773386963242134366}
+  - component: {fileID: 8890867773605268398}
   m_Layer: 0
   m_Name: small-Garage-Walls.022
   m_TagString: Untagged
@@ -32177,6 +33054,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8890867773605268398
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8890867773605268397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6053554946899812941, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!137 &8895269303489301789
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -32360,6 +33251,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8897875949634365709
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8301252824533351986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8893558317421645630, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &8915862977297756002
 GameObject:
   m_ObjectHideFlags: 0
@@ -32426,6 +33331,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2783138246061118645}
   m_Mesh: {fileID: 4057015397283381740, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &8950365556478696812
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2783138246061118645}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4057015397283381740, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!4 &8962112897001238916
 Transform:
   m_ObjectHideFlags: 0
@@ -32456,6 +33375,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8985139454032444750
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3439960281526435986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6189902957172207502, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &8995636631420829338
 GameObject:
   m_ObjectHideFlags: 0
@@ -32584,6 +33517,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &9036514039062108199
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2503617060393543405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1072471694202798073, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!33 &9045104996202233614
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -32591,6 +33538,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3436976630621483581}
+  m_Mesh: {fileID: -4172845376957738359, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
+--- !u!64 &9045104996202233615
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3436976630621483581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -4172845376957738359, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!1 &9049823521531065294
 GameObject:
@@ -32782,6 +33743,20 @@ Transform:
   m_Father: {fileID: 543450653497525304}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &9182500043565847527
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661374002166880026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1550866651026982514, guid: f68b83fe885b0574186dbda68d912a40, type: 3}
 --- !u!23 &9219874095137010701
 MeshRenderer:
   m_ObjectHideFlags: 0
