@@ -52,7 +52,7 @@ public class ChestActions : MonoBehaviour
 
             if (playerInventory != null)
             {
-                if (playerInventory.Exists(item => item.itemName == "Key"))
+                if (playerInventory.Exists(item => item.itemName == "RustKey"))
                 {
                     key = true;
                 }
