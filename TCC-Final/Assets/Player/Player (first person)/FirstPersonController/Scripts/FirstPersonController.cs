@@ -83,6 +83,9 @@ namespace StarterAssets
         private bool hasFlashLight;
         private bool hasFlashLightUV;
 
+        [SerializeField]
+        private GameObject clipboardObject;
+
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
 #endif
@@ -233,6 +236,25 @@ namespace StarterAssets
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         CollectUtil();
+                    }
+                }
+
+                if (hit.transform.tag == "Clipboard")
+                {
+                    crossNormal.gameObject.SetActive(false);
+                    crossGrab.gameObject.SetActive(true);
+
+                    atualHit = hit.transform.gameObject;
+                    hitting = true;
+
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        clipboardObject = hit.transform.gameObject;
+
+                        if (clipboardObject != null)
+                        {
+                            Debug.Log(">>> Tentou pegar o papel.");
+                        }
                     }
                 }
             }

@@ -14,6 +14,7 @@ public class MenuManager : MonoBehaviour
     public void StartButton()
     {
         SceneManager.LoadScene(1);
+        Cursor.visible = false;
     }
 
     public void ExitButton()

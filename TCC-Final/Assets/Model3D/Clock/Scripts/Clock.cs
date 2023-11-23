@@ -71,6 +71,8 @@ public class Clock : MonoBehaviour
             {
                 // Carrega a cena 0
                 SceneManager.LoadScene(0);
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
             }
         }
         else
