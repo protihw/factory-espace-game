@@ -84,7 +84,7 @@ namespace StarterAssets
         private bool hasFlashLightUV;
 
         [SerializeField]
-        private GameObject clipboardObject;
+        private RawImage clipboardImage;
 
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
@@ -249,12 +249,7 @@ namespace StarterAssets
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        clipboardObject = hit.transform.gameObject;
-
-                        if (clipboardObject != null)
-                        {
-                            Debug.Log(">>> Tentou pegar o papel.");
-                        }
+                        clipboardImage.gameObject.SetActive(true);
                     }
                 }
             }
@@ -308,10 +303,6 @@ namespace StarterAssets
 
                         // Desative o objeto coletável no mundo
                         atualHit.SetActive(false);
-                    }
-                    else
-                    {
-                        Debug.Log(">>> Você possui um item em seu inventário. Descarte-o antes de realizar esta ação.");
                     }
                 }
             }
