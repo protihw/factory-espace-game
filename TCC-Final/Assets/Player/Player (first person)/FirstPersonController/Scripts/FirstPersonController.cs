@@ -85,6 +85,8 @@ namespace StarterAssets
 
         [SerializeField]
         private RawImage clipboardImage;
+        [SerializeField]
+        private Canvas canvas;
 
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
@@ -236,20 +238,6 @@ namespace StarterAssets
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         CollectUtil();
-                    }
-                }
-
-                if (hit.transform.tag == "Clipboard")
-                {
-                    crossNormal.gameObject.SetActive(false);
-                    crossGrab.gameObject.SetActive(true);
-
-                    atualHit = hit.transform.gameObject;
-                    hitting = true;
-
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        clipboardImage.gameObject.SetActive(true);
                     }
                 }
             }

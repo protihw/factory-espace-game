@@ -58,9 +58,5 @@ public class PlayerInventory : MonoBehaviour
             slotIcon.sprite = null;
             slotIcon.gameObject.SetActive(false);
         }
-        else
-        {
-            Debug.LogWarning("Você não possui nenhum item em seu inventário.");
-        }
     }
 }
