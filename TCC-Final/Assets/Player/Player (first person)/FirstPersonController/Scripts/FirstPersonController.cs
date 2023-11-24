@@ -83,11 +83,6 @@ namespace StarterAssets
         private bool hasFlashLight;
         private bool hasFlashLightUV;
 
-        [SerializeField]
-        private RawImage clipboardImage;
-        [SerializeField]
-        private Canvas canvas;
-
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
 #endif

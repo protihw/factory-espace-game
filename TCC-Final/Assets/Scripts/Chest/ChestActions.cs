@@ -6,21 +6,28 @@ using UnityEngine;
 
 public class ChestActions : MonoBehaviour
 {
+    // animators
     [SerializeField]
     private Animator animatorLock;
     [SerializeField]
     private Animator animatorChest;
+
+    // audios
     [SerializeField]
+    private AudioSource chestAudioSource;
+    [SerializeField]
+    private AudioClip[] openingChestAudioClips;
+    [SerializeField]
+    private AudioClip[] closingChestAudioClips;
+    [SerializeField]
+    private AudioClip[] openingLockAudioClips;
+
+    // variables
     private bool colliding;
     private List<Item> playerInventory;
     private bool key;
     private bool locked = true;
     private bool chestOpen = false;
-
-    void Start()
-    {
-
-    }
 
     void Update()
     {
@@ -32,6 +39,7 @@ public class ChestActions : MonoBehaviour
             {
                 locked = false;
                 animatorLock.SetTrigger("OpenLock");
+                chestAudioSource.PlayOneShot(openingLockAudioClips[Random.Range(0, openingLockAudioClips.Length)]);
             }
             else if (Input.GetKeyDown(KeyCode.E) && colliding && locked == false && chestOpen == false)
             {
