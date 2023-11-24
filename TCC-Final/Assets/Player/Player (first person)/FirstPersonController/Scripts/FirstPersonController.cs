@@ -292,6 +292,16 @@ namespace StarterAssets
                         // Desative o objeto coletável no mundo
                         atualHit.SetActive(false);
                     }
+                    else
+                    {
+                        PlayerInventory.Instance.RemoveItem();
+
+                        // Adicione o item ao inventário do jogador
+                        PlayerInventory.Instance.AddItem(collectable.GetItem(), atualHit.transform.gameObject);
+
+                        // Desative o objeto coletável no mundo
+                        atualHit.SetActive(false);
+                    }
                 }
             }
         }

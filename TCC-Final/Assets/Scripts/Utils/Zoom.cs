@@ -3,34 +3,24 @@ using UnityEngine;
 
 public class Zoom : MonoBehaviour
 {
-    public CinemachineVirtualCamera cam;
-    private int oldlFov = 75;
-    private int newFov = 25;
-    private bool statusFov = false;
+    [SerializeField]
+    private CinemachineVirtualCamera cam;
+    private int oldFov = 75;
+    private int newFov = 35;
 
     void Start()
     {
         // Define o FOV inicial para o FOV original
-        cam.m_Lens.FieldOfView = oldlFov;
+        cam.m_Lens.FieldOfView = oldFov;
     }
 
     void Update()
     {
-        // Verifica se a tecla "C" foi pressionada
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            // Inverte o estado do FOV aumentado
-            statusFov = !statusFov;
+        cam.m_Lens.FieldOfView = oldFov;
 
-            // Atualiza o FOV com base no estado atual
-            if (statusFov)
-            {
-                cam.m_Lens.FieldOfView = newFov;
-            }
-            else
-            {
-                cam.m_Lens.FieldOfView = oldlFov;
-            }
+        if (Input.GetKey(KeyCode.C))
+        {
+            cam.m_Lens.FieldOfView = newFov;
         }
     }
 }
