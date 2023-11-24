@@ -53,7 +53,6 @@ public class DoorActions2 : MonoBehaviour
         {
             if (hit.transform.tag == "Interactive2")
             {
-                Debug.Log("COLIDINDO");
                 colliding = true;
             }
         }

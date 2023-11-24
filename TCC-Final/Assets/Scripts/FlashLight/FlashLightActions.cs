@@ -36,7 +36,7 @@ public class FlashLightActions : MonoBehaviour
 
         if (hasFlashLight)
         {
-            if (Input.GetKeyDown(KeyCode.V))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 if (spotLight.enabled)
                 {
