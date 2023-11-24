@@ -6,7 +6,7 @@ public class Zoom : MonoBehaviour
     [SerializeField]
     private CinemachineVirtualCamera cam;
     private int oldFov = 75;
-    private int newFov = 35;
+    private int newFov = 25;
 
     void Start()
     {

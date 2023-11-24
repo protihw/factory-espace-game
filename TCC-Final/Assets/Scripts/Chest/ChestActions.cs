@@ -66,19 +66,19 @@ public class ChestActions : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, distance, ~layerMask))
         {
-            if (hit.transform.tag == "Chest")
+            if (hit.transform.tag == "Interactive")
             {
                 playerInventory = PlayerInventory.Instance.inventory;
 
                 if (playerInventory != null)
                 {
-                    if (playerInventory.Exists(item => item.itemName == "RustKey"))
+                    if (playerInventory.Exists(item => item.itemName == "RustKey") || locked == false)
                     {
                         key = true;
                     }
                     else
                     {
-                        key = true;
+                        key = false;
                     }
                 }
 
