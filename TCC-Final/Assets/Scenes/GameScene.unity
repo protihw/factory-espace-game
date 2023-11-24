@@ -36509,7 +36509,6 @@ MonoBehaviour:
   BottomClamp: -70
   crossNormal: {fileID: 1535811722}
   crossGrab: {fileID: 1921002920}
-  spotLight: {fileID: 4135013735444989118}
   _animator: {fileID: 919132147837265160}
 --- !u!1 &8616685848848154086
 GameObject:
@@ -36526,6 +36525,7 @@ GameObject:
   - component: {fileID: 5420857361259323802}
   - component: {fileID: 8616685848848154090}
   - component: {fileID: 8997996946984200029}
+  - component: {fileID: 8997996946984200030}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -37327,6 +37327,23 @@ MonoBehaviour:
   dropPosition: {fileID: 1406179895}
   slotIcon: {fileID: 365049830}
   inventory: []
+--- !u!114 &8997996946984200030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848848154086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19dcf294fd08afd43b463b9052249027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotLight: {fileID: 4135013735444989118}
+  reflecting: 0
+  issuing: 0
+  hasFlashLight: 0
+  hasFlashLightUV: 0
 --- !u!4 &9006568740145171125
 Transform:
   m_ObjectHideFlags: 0
