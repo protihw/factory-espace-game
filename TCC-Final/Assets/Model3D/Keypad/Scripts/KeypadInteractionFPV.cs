@@ -1,26 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
-namespace NavKeypad { 
+namespace NavKeypad 
+{ 
 public class KeypadInteractionFPV : MonoBehaviour
 {
-    private Camera cam;
-    private void Awake() => cam = Camera.main;
-    private void Update()
-    {
-        var ray = cam.ScreenPointToRay(Input.mousePosition);
-
-        if (Input.GetMouseButtonDown(0))
+        private void Update()
         {
-            if (Physics.Raycast(ray, out var hit))
+                RaycastCamera();
+        }
+
+        void RaycastCamera()
+        {
+            Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+            RaycastHit hit;
+            float distance = 1f;
+    
+            int layerMask = 1 << LayerMask.NameToLayer("Ignore Raycast");
+
+            if (Physics.Raycast(ray, out hit, distance, ~layerMask))
             {
-                if (hit.collider.TryGetComponent(out KeypadButton keypadButton))
+                if (hit.collider.TryGetComponent(out KeypadButton keypadButton) && Input.GetMouseButtonDown(0))
                 {
                     keypadButton.PressButton();
                 }
             }
         }
-    }
 }
 }
