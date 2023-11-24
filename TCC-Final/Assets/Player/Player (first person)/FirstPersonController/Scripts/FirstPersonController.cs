@@ -375,10 +375,12 @@ namespace StarterAssets
             if (targetSpeed == 6)
             {
                 _animator.SetInteger("PlayerRunning", 1);
+                Debug.Log("Shift pressionado");
             }
             else
             {
                 _animator.SetInteger("PlayerRunning", 0);
+                Debug.Log("Shift pressionado");
             }
 
             // accelerate or decelerate to target speed
