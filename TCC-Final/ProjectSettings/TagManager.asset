@@ -11,6 +11,7 @@ TagManager:
   - Util
   - UV
   - Clipboard
+  - Chest
   layers:
   - Default
   - TransparentFX

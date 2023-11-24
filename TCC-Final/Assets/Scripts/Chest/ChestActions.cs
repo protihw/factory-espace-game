@@ -24,6 +24,8 @@ public class ChestActions : MonoBehaviour
 
     void Update()
     {
+        RaycastCamera();
+
         if (key)
         {
             if (Input.GetKeyDown(KeyCode.E) && colliding && locked == true)
@@ -44,33 +46,39 @@ public class ChestActions : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider collision)
+    void RaycastCamera()
     {
-        if (collision.gameObject.CompareTag("Player"))
+        Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+        RaycastHit hit;
+        float distance = 1.75f;
+
+        int layerMask = 1 << LayerMask.NameToLayer("Ignore Raycast");
+
+        if (Physics.Raycast(ray, out hit, distance, ~layerMask))
         {
-            playerInventory = collision.gameObject.GetComponent<PlayerInventory>().inventory;
-
-            if (playerInventory != null)
+            if (hit.transform.tag == "Chest")
             {
-                if (playerInventory.Exists(item => item.itemName == "RustKey"))
+                playerInventory = PlayerInventory.Instance.inventory;
+
+                if (playerInventory != null)
                 {
-                    key = true;
+                    if (playerInventory.Exists(item => item.itemName == "RustKey"))
+                    {
+                        key = true;
+                    }
+                    else
+                    {
+                        key = true;
+                    }
                 }
-                else
-                {
-                    key = false;
-                }
+
+                colliding = true;
             }
-
-            colliding = true;
         }
-    }
-
-    private void OnTriggerExit(Collider collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        else
         {
             colliding = false;
+
         }
     }
 }
