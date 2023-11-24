@@ -62,7 +62,7 @@ public class LockedDoorActions : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, distance, ~layerMask))
         {
-            if (hit.transform.tag == "Interactive")
+            if (hit.transform.tag == "InteractiveLocked")
             {
                 playerInventory = PlayerInventory.Instance.inventory;
 

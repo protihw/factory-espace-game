@@ -66,7 +66,7 @@ public class ChestActions : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, distance, ~layerMask))
         {
-            if (hit.transform.tag == "Interactive")
+            if (hit.transform.tag == "Chest")
             {
                 playerInventory = PlayerInventory.Instance.inventory;
 

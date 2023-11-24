@@ -11,7 +11,11 @@ TagManager:
   - Util
   - UV
   - Clipboard
+  - Chest
+  - InteractiveLocked
   - Interactive
+  - Interactive1
+  - Interactive2
   layers:
   - Default
   - TransparentFX
