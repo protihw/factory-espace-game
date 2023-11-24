@@ -3,6 +3,9 @@ using UnityEngine;
 public class FlashLightActions : MonoBehaviour
 {
     // audios
+    public AudioSource flashlightAudioSource;
+    public AudioClip enableFlashLight;
+    public AudioClip disableFlashLight;
 
     // variables
     public static FlashLightActions instance;
@@ -35,6 +38,15 @@ public class FlashLightActions : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.V))
             {
+                if (spotLight.enabled)
+                {
+                    flashlightAudioSource.PlayOneShot(enableFlashLight);
+                }
+                else
+                {
+                    flashlightAudioSource.PlayOneShot(disableFlashLight);
+                }
+
                 spotLight.enabled = !spotLight.enabled;
             }
 
@@ -42,6 +54,8 @@ public class FlashLightActions : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.R))
                 {
+                    flashlightAudioSource.PlayOneShot(enableFlashLight);
+
                     if (spotLight.color == Color.white)
                     {
                         spotLight.color = Color.magenta;
