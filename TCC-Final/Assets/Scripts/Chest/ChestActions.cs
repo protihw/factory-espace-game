@@ -27,7 +27,7 @@ public class ChestActions : MonoBehaviour
     private List<Item> playerInventory;
     private bool key;
     private bool locked = true;
-    private bool chestOpen = false;
+    private bool chestStatus = false;
 
     void Update()
     {
@@ -41,15 +41,17 @@ public class ChestActions : MonoBehaviour
                 animatorLock.SetTrigger("OpenLock");
                 chestAudioSource.PlayOneShot(openingLockAudioClips[Random.Range(0, openingLockAudioClips.Length)]);
             }
-            else if (Input.GetKeyDown(KeyCode.E) && colliding && locked == false && chestOpen == false)
+            else if (Input.GetKeyDown(KeyCode.E) && colliding && locked == false && chestStatus == false)
             {
-                chestOpen = true;
-                animatorChest.SetTrigger("OpenChest");
+                chestStatus = true;
+                animatorChest.SetBool("chestStatus", chestStatus);
+                chestAudioSource.PlayOneShot(openingChestAudioClips[Random.Range(0, openingChestAudioClips.Length)]);
             }
-            else if (Input.GetKeyDown(KeyCode.E) && colliding && locked == false && chestOpen == true)
+            else if (Input.GetKeyDown(KeyCode.E) && colliding && locked == false && chestStatus == true)
             {
-                chestOpen = false;
-                animatorChest.SetTrigger("CloseChest");
+                chestStatus = false;
+                animatorChest.SetBool("chestStatus", chestStatus);
+                chestAudioSource.PlayOneShot(closingChestAudioClips[Random.Range(0, closingChestAudioClips.Length)]);
             }
         }
     }

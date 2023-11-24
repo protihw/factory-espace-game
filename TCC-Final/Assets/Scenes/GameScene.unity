@@ -9056,8 +9056,12 @@ MonoBehaviour:
   animatorLock: {fileID: 1524423083}
   animatorChest: {fileID: 1448464550}
   chestAudioSource: {fileID: 1371634681}
-  openingChestAudioClips: []
-  closingChestAudioClips: []
+  openingChestAudioClips:
+  - {fileID: 8300000, guid: 0921c6f7104eca248b33b7d02708e469, type: 3}
+  - {fileID: 8300000, guid: ab384642aa9657d4fb8d6c44082726ba, type: 3}
+  closingChestAudioClips:
+  - {fileID: 8300000, guid: 95d36994c5aaf734e825b9b071968269, type: 3}
+  - {fileID: 8300000, guid: a1350748e0dbbdc4ea1baa4612180a0b, type: 3}
   openingLockAudioClips:
   - {fileID: 8300000, guid: c70d84ab81270450ca59ba4554ce5a6d, type: 3}
   - {fileID: 8300000, guid: dd532fdb2a61e4cc5bc727f3b32a69a8, type: 3}
