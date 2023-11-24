@@ -35607,8 +35607,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 513
   CinemachineCameraTarget: {fileID: 4135013735444989117}
-  TopClamp: 52
-  BottomClamp: -55
+  TopClamp: 70
+  BottomClamp: -70
   crossNormal: {fileID: 1535811722}
   crossGrab: {fileID: 1921002920}
   spotLight: {fileID: 4135013735444989118}
