@@ -5,6 +5,9 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject mainPanel;
     public GameObject startButton, exitButton;
+    public AudioSource audioSource;
+    public AudioClip buttonClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,16 +16,20 @@ public class MenuManager : MonoBehaviour
 
     public void StartButton()
     {
+        audioSource.PlayOneShot(buttonClip);
+
         SceneManager.LoadScene(1);
         Cursor.visible = false;
     }
 
     public void ExitButton()
     {
+        audioSource.PlayOneShot(buttonClip);
+
         #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
+            UnityEditor.EditorApplication.isPlaying = false;
         #else
-                    Application.Quit();
+            Application.Quit();
         #endif
     }
 }

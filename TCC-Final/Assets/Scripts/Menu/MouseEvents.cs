@@ -4,6 +4,7 @@ using TMPro;
 public class MouseEvents : MonoBehaviour
 {
     public TMP_Text startText, exitText;
+
     public void StartChangeColorBlack()
     {
         startText.color = Color.black;
