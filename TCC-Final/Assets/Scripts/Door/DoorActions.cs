@@ -1,4 +1,6 @@
+using System.Net.Sockets;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DoorActions : MonoBehaviour
 {
@@ -13,6 +15,8 @@ public class DoorActions : MonoBehaviour
 
     void Update()
     {
+        RaycastCamera();
+
         if (Input.GetKeyDown(KeyCode.E) && colliding && doorOpen == false)
         {
             doorOpen = true;
@@ -25,17 +29,22 @@ public class DoorActions : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider collission)
+    void RaycastCamera()
     {
-        if (collission.gameObject.CompareTag("Player"))
-        {
-            colliding = true;
-        }
-    }
+        Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+        RaycastHit hit;
+        float distance = 1.75f;
 
-    private void OnTriggerExit(Collider collission)
-    {
-        if (collission.gameObject.CompareTag("Player"))
+        int layerMask = 1 << LayerMask.NameToLayer("Ignore Raycast");
+
+        if (Physics.Raycast(ray, out hit, distance, ~layerMask))
+        {
+            if (hit.transform.tag == "Interactive")
+            {
+                colliding = true;
+            }
+        }
+        else
         {
             colliding = false;
         }

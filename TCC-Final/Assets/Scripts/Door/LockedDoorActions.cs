@@ -1,8 +1,20 @@
 using System.Collections.Generic;
+using System.Net.Sockets;
 using UnityEngine;
 
 public class LockedDoorActions : MonoBehaviour
 {
+    // audios
+    [SerializeField]
+    private AudioSource doorAudioSource;
+    [SerializeField]
+    private AudioClip[] openingDoorAudioClips;
+    [SerializeField]
+    private AudioClip[] closingDoorAudioClips;
+    [SerializeField]
+    private AudioClip lockedDoorAudioClip;
+
+    // variables
     [SerializeField]
     private Animator _animator;
     private bool colliding;
@@ -11,54 +23,65 @@ public class LockedDoorActions : MonoBehaviour
     private bool doorOpen = false;
     private bool hasUnlocked = false;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
+        RaycastCamera();
+
         if (key || hasUnlocked == true)
         {
             if (Input.GetKeyDown(KeyCode.E) && colliding && doorOpen == false)
             {
-                doorOpen = true;
-                _animator.SetTrigger("Open");
                 hasUnlocked = true;
+                doorOpen = true;
+                _animator.SetBool("doorStatus", doorOpen);
+                doorAudioSource.PlayOneShot(openingDoorAudioClips[Random.Range(0, openingDoorAudioClips.Length)]);
             }
             else if (Input.GetKeyDown(KeyCode.E) && colliding && doorOpen == true)
             {
                 doorOpen = false;
-                _animator.SetTrigger("Close");
+                _animator.SetBool("doorStatus", doorOpen);
+                doorAudioSource.PlayOneShot(closingDoorAudioClips[Random.Range(0, closingDoorAudioClips.Length)]);
             }
         }
-    }
-
-    private void OnTriggerEnter(Collider collission)
-    {
-        if (collission.gameObject.CompareTag("Player"))
+        else
         {
-            playerInventory = collission.gameObject.GetComponent<PlayerInventory>().inventory;
-
-            if (playerInventory != null)
+            if (Input.GetKeyDown(KeyCode.E) && colliding)
             {
-                if (playerInventory.Exists(item => item.itemName == "Key"))
-                {
-                    key = true;
-                }
-                else
-                {
-                    key = false;
-                }
+                doorAudioSource.PlayOneShot(lockedDoorAudioClip);
             }
-
-            colliding = true;
         }
     }
 
-    private void OnTriggerExit(Collider collission)
+    void RaycastCamera()
     {
-        if (collission.gameObject.CompareTag("Player"))
+        Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+        RaycastHit hit;
+        float distance = 1f;
+
+        int layerMask = 1 << LayerMask.NameToLayer("Ignore Raycast");
+
+        if (Physics.Raycast(ray, out hit, distance, ~layerMask))
+        {
+            if (hit.transform.tag == "Interactive")
+            {
+                playerInventory = PlayerInventory.Instance.inventory;
+
+                if (playerInventory != null)
+                {
+                    if (playerInventory.Exists(item => item.itemName == "Key"))
+                    {
+                        key = true;
+                    }
+                    else
+                    {
+                        key = false;
+                    }
+                }
+
+                colliding = true;
+            }
+        }
+        else
         {
             colliding = false;
         }
