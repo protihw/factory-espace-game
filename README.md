@@ -5,7 +5,7 @@ Factory Escape é um jogo singleplayer em primeira pessoa do genêro Escape Room
 ## Índice
 
 - [Instalação](#instalação)
-- [Imagens](#uso)
+- [Imagens](#imagens)
 - [Comandos](#comandos)
 - [Colaboradores](#colaboradores)
 - [Contato](#contato)
