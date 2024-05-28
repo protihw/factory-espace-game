@@ -6,23 +6,37 @@ Factory Escape é um jogo singleplayer em primeira pessoa do genêro Escape Room
 
 - [Instalação](#instalação)
 - [Imagens](#uso)
+- [Colaboradores](#colaboradores)
 - [Contato](#contato)
 
 ## Instalação
 
-Passos para instalar e configurar o ambiente de desenvolvimento:
+Passos para instalar:
 
-1. Clone o repositório:
+1. Acesse a URL abaixo:
     ```sh
-    git clone https://github.com/protihw/eduhas-website.git
+    https://protihw.itch.io/factory-escape
     ```
-2. Navegue até o diretório do projeto no seu gerenciador de arquivos.
+2. Faça download do arquivo Factory Escape.rar.
    
-3. Dê um duplo clique no arquivo index.html para abri-lo no navegador padrão.
+3. Extraia a pasta compactada no local que desejar do seu computador.
+
+4. Execute o aplicativo Factory Escape.exe e se divirta!
 
 ## Imagens
-![image](https://github.com/protihw/eduhas-website/assets/69305991/f3e399ef-cdb6-4a68-9f16-6a276429c2de)
-![image](https://github.com/protihw/eduhas-website/assets/69305991/48b2e9e9-7015-4076-9e1c-2581420ec77d)
+
+![image](https://github.com/protihw/factory-espace-game/assets/69305991/e15f80ec-e9cb-444a-9c70-790411327ad2)
+![image](https://github.com/protihw/factory-espace-game/assets/69305991/65e87167-5adc-494b-bfea-cc0e8b027691)
+
+## Colaboradores
+
+O projeto foi realizado por um grupo de 3 integrantes:
+
+* Desenvolvedores:
+  - Bernardo Proti
+* Designers e Animadores:
+  - Vicenzo Fernandes (https://github.com/vicenzofr)
+  - Lucas Miranda (https://github.com/LucasM221)
 
 ## Contato
 
