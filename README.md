@@ -6,6 +6,7 @@ Factory Escape é um jogo singleplayer em primeira pessoa do genêro Escape Room
 
 - [Instalação](#instalação)
 - [Imagens](#uso)
+- [Comandos](#comandos)
 - [Colaboradores](#colaboradores)
 - [Contato](#contato)
 
@@ -27,6 +28,19 @@ Passos para instalar:
 
 ![image](https://github.com/protihw/factory-espace-game/assets/69305991/e15f80ec-e9cb-444a-9c70-790411327ad2)
 ![image](https://github.com/protihw/factory-espace-game/assets/69305991/65e87167-5adc-494b-bfea-cc0e8b027691)
+
+## Comandos
+
+* Interação
+  - E: interage com objetos;
+  - Q: larga o objeto atual;
+  - F: interruptor da lanterna;
+  - R: interruptor do modo de luz;
+  - C: zoom.
+
+* Movimentação
+  - Espaço: pula;
+  - Shift: corre.
 
 ## Colaboradores
 
