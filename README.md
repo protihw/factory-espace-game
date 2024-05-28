@@ -7,6 +7,7 @@ Factory Escape é um jogo singleplayer em primeira pessoa do genêro Escape Room
 - [Instalação](#instalação)
 - [Imagens](#imagens)
 - [Comandos](#comandos)
+- [Ferramentas](#ferramentas)
 - [Colaboradores](#colaboradores)
 - [Contato](#contato)
 
@@ -41,6 +42,11 @@ Passos para instalar:
 * Movimentação
   - Espaço: pula;
   - Shift: corre.
+ 
+## Ferramentas
+
+Unity + C#, Blender, Adobe Photoshop, Adobe Audition e Adobe Premiere.
+
 
 ## Colaboradores
 
